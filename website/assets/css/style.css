@@ -95,7 +95,9 @@ ul ul ul {
 }
 
 select,input,textarea,button{box-shadow:none;outline:0!important;}
-button {background: transparent;border: 0;}
+button {background: transparent;
+    border: 1px solid #00ff00;
+}
 
 html,body{
     height: 100%;
@@ -158,7 +160,17 @@ nav.navbar.bootsnav ul.nav > li > a {
     transition: 0.3s linear;
 }
 nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+
+/* Antes de Clickar */
+nav.navbar.bootsnav ul.nav > li > a:hover{color: #fd01c7;}
+    /* nav.navbar.bootsnav ul.nav > li > a:focus,
+    nav.navbar.bootsnav ul.nav > li.active>:active{color: #fd01c7;} */
+
+/* Depois de Clickar */
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
+    /* .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus {color:#f00;} */
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #9f00ff;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover {color:#fd01c7;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -167,10 +179,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 0px;
 }
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
-/*.nav li*/
-
+/*.nav li
 
 /*.menu-ui-design*/
 .menu-ui-design{overflow-y:scroll;height: 350px;}
@@ -194,8 +203,12 @@ nav.navbar.bootsnav .navbar-toggle {
     border: 1px solid #d92cf9;
     padding: 10px;
     top: 0;
+    outline: none;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
+nav.navbar.bootsnav .navbar-toggle i{
+    font-size: 24px;
+    color: #d92cf9;
+}
 /*.navbar-toggle */
 
 
