@@ -7,8 +7,6 @@ $(document).ready(function(){
 * Version       : 1.0
 ==================================== */
 
-
-
 /*=========== TABLE OF CONTENTS ===========
 1. Scroll To Top 
 2. Smooth Scroll spy
@@ -18,41 +16,42 @@ $(document).ready(function(){
 ======================================*/
 
     // 1. Scroll To Top 
-		$(window).on('scroll',function () {
+		$(window).on('scroll', function () {
 			if ($(this).scrollTop() > 600) {
 				$('.return-to-top').fadeIn();
 			} else {
 				$('.return-to-top').fadeOut();
 			}
 		});
-		$('.return-to-top').on('click',function(){
-				$('html, body').animate({
+		$('.return-to-top').on('click', function(){
+			$('html, body').animate({
 				scrollTop: 0
-			}, 1500);
+			}, 1000);
 			return false;
 		});
-	
 	
 	
 	// 2. Smooth Scroll spy
 		
 		$('.header-area').sticky({
-           topSpacing:0
-        });
+			topSpacing:0
+		});
 		
 		//=============
 
 		$('li.smooth-menu a').bind("click", function(event) {
 			event.preventDefault();
 			var anchor = $(this);
+			var offset = 85;
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 0
+				scrollTop: $(anchor.attr('href')).offset().top - offset
 			}, 1200,'easeInOutExpo');
 		});
 		
+		// Scrollspy with offset
 		$('body').scrollspy({
-			target:'.navbar-collapse',
-			offset:0
+			target: '.navbar-collapse',
+			offset: 100 // Ajusta o valor conforme a necessidade
 		});
 
 	// 3. Progress-bar
@@ -78,7 +77,7 @@ $(document).ready(function(){
 			$('#client').owlCarousel({
 				items:7,
 				loop:true,
-				smartSpeed: 1000,
+				smartSpeed: 50,
 				autoplay:true,
 				dots:false,
 				autoplayHoverPause:true,
@@ -91,7 +90,6 @@ $(document).ready(function(){
 						},
 						600:{
 							items:4
-
 						},
 						1199:{
 							items:4
@@ -102,26 +100,24 @@ $(document).ready(function(){
 					}
 				});
 				
-				
-				$('.play').on('click',function(){
-					owl.trigger('play.owl.autoplay',[1000])
-				})
-				$('.stop').on('click',function(){
+				$('.play').on('click', function(){
+					owl.trigger('play.owl.autoplay', [1000])
+				});
+				$('.stop').on('click', function(){
 					owl.trigger('stop.owl.autoplay')
-				})
+				});
 
 
     // 5. welcome animation support
 
-        $(window).load(function(){
+        $(window).on('load', function(){
         	$(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({'opacity':'0'});
             $(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
         });
 
-        $(window).load(function(){
+        $(window).on('load', function(){
         	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'0'});
             $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
 });	
-	
