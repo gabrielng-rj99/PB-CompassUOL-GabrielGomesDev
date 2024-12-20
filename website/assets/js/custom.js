@@ -52,7 +52,7 @@ $(document).ready(function(){
 	// Scrollspy with offset
 	$('body').scrollspy({
 		target: '.navbar-collapse',
-		offset: 100 // Ajusta o valor conforme a necessidade
+		offset: 250 // Ajusta o valor conforme a necessidade
 	});
 
 

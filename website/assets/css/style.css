@@ -654,16 +654,37 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     display: block;
     clear: both;
 }
+
 .isotope .item {
     position:relative;
-    overflow:hidden;
-    margin-bottom: 30px;
+    overflow: hidden;
+    margin: 30px;
+    width: 350px;
+    height: auto;
+    max-height: 420px;
 }
+.row-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row-items .item{
+    height: 165px;
+    width: 165px;
+}
+
+.row-items .item img{
+    max-width: 165px;
+    height: 165px;
+    object-position: center;
+}
+
 /*.item img*/
 .isotope .item img{
-    width:100%; /* 350px */
-    height:100%; /*.210px and 450px for center*/
-    object-fit: cover;
+    display: block;
+    width: 100%;
+    max-height: 100%;
     -webkit-transition: .5s;
     -moz-transition: .5s;
     -ms-transition: .5s;
@@ -722,11 +743,20 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 .clients-area {
     display: flex;
     align-items: center;
-    height: 250px;
+    height: 100px;
 }
-.clients-area .item {padding: 0 25px;}
+.ca1 {margin-top: 25px;}
+.ca-unique {margin-top: 50px; margin-bottom: 50px;}
+.ca-final {margin-bottom: 25px;}
 
-.clients .clients-area .owl-carousel .owl-item img {
+.clients-area .item {padding: 0 25px; margin-bottom: 0;}
+.clients-content .isotope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients .clients-area .clients-content img {
     display: block;
     width: 100%;
     height: auto;
@@ -848,7 +878,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 
 .hm-footer-copyright p{
     color: #888ea5;
-    text-transform: capitalize;
     padding: 38px 0;
 }
 .hm-footer-copyright p a {color: #888ea5;}
@@ -901,4 +930,4 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
-/*========================Thank you=================
+/*========================Thank you=================*/

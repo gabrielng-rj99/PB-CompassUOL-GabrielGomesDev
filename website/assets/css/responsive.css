@@ -39,20 +39,18 @@
 	.timeline-content span>i{left: 0%;top: -54%;}
 	.experience-time span>i {left: -6%;top: 6%;}
 	.main-timeline:before {left:0.4%;}
+	.isotope .item {max-width: 350px;margin: auto 50px;}
+
 
 	.single-horizontal-timeline .experience-time,.single-horizontal-timeline .timeline-content {margin: 0;}
 }/*max-width:991px*/
-
-@media screen and (max-width:768px){
-    
-}/*max-width:768px*/
 
 @media screen and (max-width:767px){
 	.single-about-img {max-width: 450px;}
 	.experience-time span>i,.timeline-content span>i,.main-timeline:before {display: none;}
 	.experience-time, .timeline-content {margin-left: 0;}
 
-	.isotope .item {max-width: 350px;margin: 0 auto 30px;}
+	.isotope .item {max-width: 350px;margin:auto 50px;}
 
 	.single-profile {max-width: 350px; margin: 30px auto;border: 0;}
 	.profile-border{border: 0;}
@@ -94,3 +92,4 @@
 	
 }/*max-width:320px*/
 
+/* -------------------------------------------------- */
