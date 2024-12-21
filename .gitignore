@@ -1,0 +1,10 @@
+# Ignore build and publish folders
+/build/
+/bin/
+/obj/
+
+/.vscode/
+/*.user
+/*.suo
+
+website/assets/images/portfolio/originals
