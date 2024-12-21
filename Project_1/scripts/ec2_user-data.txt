@@ -1,8 +1,19 @@
-sudo cd ~
-sudo yum update -y && sudo yum install git curl nginx cronie -y
+#!/bin/bash
+
+sudo yum update -y
+sudo yum install git curl nginx cronie -y
+
+git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
+
+sudo systemctl start crond
+sudo systemctl enable crond
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl restart nginx
 
 sudo rm -rf ~/PB-CompassUOL-GabrielGomesDev/
 git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
+
 sudo cp -R ~/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
 
 sudo systemctl restart crond
