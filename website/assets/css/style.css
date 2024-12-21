@@ -190,7 +190,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #d92cf9;
+  background-color: #9f00ff;
 }
 /*.menu-ui-design*/
 
@@ -200,14 +200,14 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #d92cf9;
+    border: 1px solid #9f00ff;
     padding: 10px;
     top: 0;
     outline: none;
 }
 nav.navbar.bootsnav .navbar-toggle i{
     font-size: 24px;
-    color: #d92cf9;
+    color: #9f00ff;
 }
 /*.navbar-toggle */
 
@@ -247,7 +247,7 @@ nav.navbar.bootsnav .navbar-toggle i{
 }
 .header-text h2 span {color: #9f00ff;}
 .header-text p {
-    color: #fff;
+    color: #D6FF00;
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
@@ -716,11 +716,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     -ms-transform:scale(0);
     -o-transform:scale(0);
     transform:scale(0);
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -ms-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
 }
 .isotope-overlay a {
     display: inline-block;
@@ -740,8 +740,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 /*-------------------------------------
         10. Clients
 --------------------------------------*/
-.clients {padding-top: 50px;}
-.clients-area {
+.acknowledgments {padding-top: 50px;}
+.acknowledgments-area {
     display: flex;
     align-items: center;
     height: 100px;
@@ -750,14 +750,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 .ca-unique {margin-top: 50px; margin-bottom: 50px;}
 .ca-final {margin-bottom: 25px;}
 
-.clients-area .item {padding: 0 25px; margin-bottom: 0;}
-.clients-content .isotope {
+.acknowledgments-area .item {padding: 0 25px; margin-bottom: 0;}
+.acknowledgments-content .isotope {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.clients .clients-area .clients-content img {
+.acknowledgments .acknowledgments-area .acknowledgments-content img {
     display: block;
     width: 100%;
     height: auto;
