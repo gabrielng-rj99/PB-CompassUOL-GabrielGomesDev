@@ -5,11 +5,10 @@ sudo rm -rf ~/PB-CompassUOL-GabrielGomesDev/
 git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
 sudo cp -R ~/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
 
-sudo systemctl restart crond
-sudo systemctl restart nginx
+sudo systemctl restart crond && sudo systemctl restart nginx
 
-VERIFY_NGINX="*/5 * * * * ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
-START_INSTANCE="@reboot ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh"
+VERIFY_NGINX="*/5 * * * * sudo ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
+START_INSTANCE="@reboot sudo ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh"
 
 (crontab -l | grep -q "$VERIFY_NGINX") || (crontab -l; echo "$VERIFY_NGINX") | crontab -
 (crontab -l | grep -q "$START_INSTANCE") || (crontab -l; echo "$START_INSTANCE") | crontab -
