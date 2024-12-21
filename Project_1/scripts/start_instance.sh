@@ -10,5 +10,5 @@ sudo systemctl restart crond && sudo systemctl restart nginx
 VERIFY_NGINX="*/5 * * * * ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
 START_INSTANCE="@reboot ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh"
 
-(sudo crontab -l | sudo grep -q "$VERIFY_NGINX") || (sudo crontab -l; sudo echo "$VERIFY_NGINX") | sudo crontab -
-(sudo crontab -l | sudo grep -q "$START_INSTANCE") || (sudo crontab -l; sudo echo "$START_INSTANCE") | sudo crontab -
+(crontab -l | grep -q "$VERIFY_NGINX") || (crontab -l; echo "$VERIFY_NGINX") | crontab -
+(crontab -l | grep -q "$START_INSTANCE") || (crontab -l; echo "$START_INSTANCE") | crontab -
