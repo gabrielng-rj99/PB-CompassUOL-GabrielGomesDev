@@ -17,11 +17,11 @@ sudo systemctl start nginx
 VERIFY_NGINX="*/5 * * * * sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
 START_INSTANCE="@reboot bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh"
 
+
 if ! crontab -l 2>/dev/null | grep -qF "$VERIFY_NGINX"; then
-    echo "$VERIFY_NGINX" | crontab -
+    (crontab -l 2>/dev/null; echo "$VERIFY_NGINX") | crontab -
 fi
 
-# Verifique se o comando START_INSTANCE já existe, e se não, adicione
 if ! crontab -l 2>/dev/null | grep -qF "$START_INSTANCE"; then
-    echo "$START_INSTANCE" | crontab -
+    (crontab -l 2>/dev/null; echo "$START_INSTANCE") | crontab -
 fi
