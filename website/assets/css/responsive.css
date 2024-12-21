@@ -41,6 +41,10 @@
 	.main-timeline:before {left:0.4%;}
 	.isotope .item {max-width: 350px;margin: auto 50px;}
 
+	.experience-time,h2,h3,h4,h5 {text-align: center;}
+	.experience-time .description{text-align: left;}
+
+	.col-md-4 {margin-left: 50px; margin-right: 50px;}
 
 	.single-horizontal-timeline .experience-time,.single-horizontal-timeline .timeline-content {margin: 0;}
 }/*max-width:991px*/
@@ -55,9 +59,20 @@
 	.single-profile {max-width: 350px; margin: 30px auto;border: 0;}
 	.profile-border{border: 0;}
 
+	.contact .container {width: 500px;}
+	.contact-content {flex-direction: row;}
+
 	.single-horizontal-timeline {max-width: 350px;margin: 30px auto;}
 
 }/*max-width:767px*/
+
+@media screen and (max-width: 721px){
+	.col-md-4 h3 {font-size: 16px;}
+	.col-md-4 .single-skill-content {font-size: 16px;}
+}
+
+/*max-width:660px*/
+
 
 @media screen and (max-width: 660px){
 
@@ -73,19 +88,25 @@
 
 @media screen and (max-width: 540px){
 	.subscribe-title h2 {font-size: 24px;}
+	.contact-content .single-contact-box {width: 100px;}
 
 }/*max-width:540px*/
 
 @media screen and (max-width: 480px){
-	
+	.contact-content {
+		flex-wrap: wrap;margin-left: 0px; margin-right: 50px;
+		margin-bottom: 100px;
+	}
+	.contact-content .single-contact-box {
+		margin: 10px 25px;
+	}
 }/*max-width:480px*/
 
 @media screen and (max-width: 440px){
 	
 }/*max-width:400px*/
 
-@media screen and (max-width:350px){
-
+@media screen and (max-width:361px){
 }/*max-width:350px*/
 
 @media screen and  (max-width: 320px){

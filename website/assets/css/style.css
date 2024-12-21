@@ -767,7 +767,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 /*-------------------------------------
         11. Contact
 --------------------------------------*/
-.contact {
+/* .contact {
     background: #f9fbfd;
     padding: 50px 0 100px;
 }
@@ -786,10 +786,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     background: #fff;
     color: #636a82;
     resize: none;
-}
+} */
 
-/*--contct button--*/
-.contact-form .single-contact-btn {
+/*-- ---- contct button--*/
+/* .contact-form .single-contact-btn {
     display:flex;
     align-items:center;
     justify-content:center;
@@ -825,12 +825,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     background: #b636fe;
     border: 1px solid #b636fe;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
-}
+} */
 
-/*--contct button--*/
-
-/* contact-adress */
-.contact-add-head h3 {
+/*-- ---- contact-adress */
+/* .contact-add-head h3 {
     font-size:  24px;
     color:  #3c4258;
 }
@@ -840,11 +838,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     color:  #636a82;
     font-weight:  300;
     margin-top:  6px;
-}
-/* contact-adress */
+} */
 
-/*.contact-add-info */
-.contact-add-info { margin: 42px 0 52px;}
+/*-- ---- .contact-add-info */
+
+/* .contact-add-info { margin: 42px 0 52px;}
 .single-contact-add-info h3 {
     color:  #636a82;
     font-weight:  500;
@@ -856,8 +854,50 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 }
 .single-contact-add-info {
     margin-bottom:  26px;
+} */
+
+.contact-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    height: 120px;
 }
-/*.contact-add-info */
+
+.contact-content .single-contact-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px 20px;
+    width: 120px;
+}
+
+.contact-content a {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.contact-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-content .single-contact-box:hover img {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: 0.1s;
+}
+
+.contact-content .single-contact-box:hover a {
+    font-size: 18px; transition: 0.1s;font-weight: bold
+}
+
 
 /*hm-foot-icon*/
 .hm-foot-icon {
