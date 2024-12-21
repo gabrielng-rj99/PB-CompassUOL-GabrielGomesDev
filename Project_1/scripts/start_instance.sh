@@ -1,9 +1,12 @@
 sudo cd ~
 sudo yum update -y && sudo yum install git curl nginx cronie -y
 
-sudo rm -rf ~/PB-CompassUOL-GabrielGomesDev/
 git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
+cd PB-CompassUOL-GabrielGomesDev
+git pull origin main
+
 sudo cp -R ~/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
+
 
 sudo systemctl restart crond
 
