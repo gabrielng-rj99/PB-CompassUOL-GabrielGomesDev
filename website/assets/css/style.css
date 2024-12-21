@@ -510,6 +510,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 .main-timeline ul, .main-timeline li, .main-timeline ul li{
     marker: none;
     list-style-type: none;
+    margin-right: 25px;
 }
 .main-timeline:before{
     content: "";
