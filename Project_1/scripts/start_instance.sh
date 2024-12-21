@@ -7,8 +7,8 @@ sudo cp -R ~/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
 
 sudo systemctl restart crond && sudo systemctl restart nginx
 
-VERIFY_NGINX="*/5 * * * * ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
-START_INSTANCE="@reboot ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh"
+VERIFY_NGINX="*/5 * * * * sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
+START_INSTANCE="@reboot sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh"
 
-(crontab -l | grep -q "$VERIFY_NGINX") || (crontab -l; echo "$VERIFY_NGINX") | crontab -
-(crontab -l | grep -q "$START_INSTANCE") || (crontab -l; echo "$START_INSTANCE") | crontab -
+(crontab -u ec2-user -l | grep -q "$VERIFY_NGINX") || (crontab -u ec2-user -l; echo "$VERIFY_NGINX") | crontab -u ec2-user -
+(crontab -u ec2-user -l | grep -q "$START_INSTANCE") || (crontab -u ec2-user -l; echo "$START_INSTANCE") | crontab -u ec2-user -
