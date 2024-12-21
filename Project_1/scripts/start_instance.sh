@@ -10,4 +10,4 @@ sudo systemctl restart crond && sudo systemctl restart nginx
 VERIFY_NGINX="*/5 * * * * sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
 START_INSTANCE="@reboot sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh"
 
-(crontab -u ec2-user -l 2>/dev/null; echo "$VERIFY_NGINX"; echo "$START_INSTANCE") | crontab -u ec2-user -
+(crontab -l 2>/dev/null; echo "$VERIFY_NGINX"; echo "$START_INSTANCE") | crontab -
