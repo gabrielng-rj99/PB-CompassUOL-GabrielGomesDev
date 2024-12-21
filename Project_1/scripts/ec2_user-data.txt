@@ -19,4 +19,4 @@ sudo cp -R ~/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
 sudo systemctl restart crond
 sudo systemctl restart nginx
 
-sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh
+bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start_instance.sh
