@@ -22,13 +22,6 @@
 		<link rel="preload" href="assets/css/responsive.css" as="style">
 
 		<!-- -------------------------------------------------- -->
-		<!-- LOADING SCREEN -->
-		<link rel="preload" href="assets/css/loading.css" as="style">
-		<link rel="preload" href="assets/css/loading.html" as="style">
-		<link rel="preload" href="assets/js/loading.js" as="style">
-
-		<link rel="stylesheet" href="css/loading.css">
-
 		<!-- -------------------------------------------------- -->
 
         <!--font-family-->
@@ -76,8 +69,6 @@
     </head>
 	
 	<body>
-		<div id="content" class="hidden-content">
-
 		<header class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
@@ -845,8 +836,6 @@
 			</div><!--/.scroll-Top-->
 			
         </footer>
-		
-		</div>
 
 		<!-- ------------------------------------------------------------------------------ -->
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
@@ -861,16 +850,6 @@
 		<script src="assets/js/bootsnav.js"></script>
 		<script src="assets/js/jquery.sticky.js"></script>
         <script src="assets/js/custom.js"></script>
-
-		<!-- Loading Scripts -->
-		<script src="assets/js/loading.js"></script>
-		<script> // Carrega dinamicamente o HTML da tela de loading
-			fetch('./loading.html')
-			  .then(response => response.text())
-			  .then(data => {
-				document.body.insertAdjacentHTML('afterbegin', data);
-			  });
-		</script>
 
     </body>
 	

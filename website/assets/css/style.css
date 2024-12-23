@@ -244,6 +244,7 @@ nav.navbar.bootsnav .navbar-toggle i{
     font-size: 54px;
     font-weight: 700;
     line-height: 1.5;
+    opacity: 0;
 }
 .header-text h2 span {color: #9f00ff;}
 .header-text p {
