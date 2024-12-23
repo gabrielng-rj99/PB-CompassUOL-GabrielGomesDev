@@ -3,8 +3,8 @@
 Este projeto tem como objetivo criar um ambiente Linux no Windows utilizando o WSL (Windows Subsystem for Linux) e configurar um servidor Nginx. Um script de monitoramento foi desenvolvido para verificar o status do serviço Nginx a cada 5 minutos, registrando o status de **ONLINE** ou **OFFLINE** em arquivos de log. 
 
 ## Documentação
-- #### ***[Instalação WSL](./Project_1/doc/wsl-Install.md)***
-- #### ***[Subir um Servidor Nginx Online](./Project_1/doc/nginx-server.md)***<br><br>
+- #### ***[Instalação WSL](./doc/wsl-Install.md)***
+- #### ***[Subir um Servidor Nginx Online com monitoramento (+logs)](./doc/nginx-server.md)***<br><br>
 
 ## Funcionalidades
 
