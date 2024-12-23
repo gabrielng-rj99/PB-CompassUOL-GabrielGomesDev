@@ -8,6 +8,8 @@ Até o momento, o repositório contém os seguintes projetos:
 - **[Projeto 1 - Instalação WSL e Subir um Servidor Nginx Online](./Project_1/)**  
    *Descrição:* Este projeto envolve a criação de um ambiente Linux no Windows utilizando WSL, a instalação de um servidor Nginx, e o desenvolvimento de um script automatizado para monitorar o status do servidor.
 
+<br>
+
 ### Aplicação Web Pessoal
 
 Além dos projetos específicos do estágio, desenvolvi uma **aplicação web própria** para testar minhas habilidades e subir um servidor que tenha conteúdo. Esta aplicação também será atualizada conforme novos projetos forem concluídos e sendo introduzidos na parte de portfólio online.
