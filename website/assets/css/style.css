@@ -305,7 +305,7 @@ nav.navbar.bootsnav .navbar-toggle i{
 .single-about-txt p {
     font-size: 16px;
     color: #999fb3;
-    padding: 25px 0 20px;
+    padding: 15px 0 20px;
     border-bottom: 1px solid #999fb3;
 }
 .single-about-add-info {
@@ -476,6 +476,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 /*-------------------------------------
         7. Experience
 -------------------------------------*/
+.experience {background: #f9fbfd;}
 .experience-content {padding-top: 100px;}
 .single-timeline-box {margin-bottom: 75px;}
 
@@ -521,11 +522,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     content: "";
     width: 2px;
     height: 100%;
-    background: #b2c1ce;
+    background: #888ea5;
     position: absolute;
     top: 0%;
     left: 42%;
-    z-index: -1;
+    z-index: 1;
 }
 .main-timeline .timeline{
     position: relative;
@@ -754,6 +755,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     display: flex;
     align-items: center;
     height: 100px;
+    margin: 35px 0;
 }
 /* .ca1 {margin-top: 25px;}
 .ca-final {margin-bottom: 25px;} */
@@ -925,7 +927,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 }/*hm-foot-icon*/
 
 .footer-copyright {
-    border-top: 1px solid #888ea5;
+    border-top: 1px solid #b2c1ce;
 }
 
 .hm-footer-copyright p{
