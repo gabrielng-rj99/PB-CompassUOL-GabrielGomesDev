@@ -5,7 +5,7 @@ Este repositório contém os projetos desenvolvidos durante o **programa de est�
 
 Até o momento, o repositório contém os seguintes projetos:
 
-- **[Projeto 1 - Instalação WSL e Subir um Servidor Nginx Online](./Project_1/README.md)**  
+- **[Projeto 1 - Instalação WSL e Subir um Servidor Nginx Online](./Project_1/)**  
    *Descrição:* Este projeto envolve a criação de um ambiente Linux no Windows utilizando WSL, a instalação de um servidor Nginx, e o desenvolvimento de um script automatizado para monitorar o status do servidor.
 
 ## Aplicação Web Pessoal
