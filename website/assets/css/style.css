@@ -19,7 +19,7 @@ font-family: 'Poppins', sans-serif;
 7.  Experience
 8.  Profiles
 9.  Portfolio
-10. Clients
+10. Acknowledgments
 11. Contact
 
 /*-------------------------------------
@@ -113,6 +113,20 @@ html,body{
 }
 
 .fix{position: relative;clear: both;}
+
+.section-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #DADFE6;
+    border-bottom: 1px solid #e5ebf2;
+}
+
+
+
+
 /*=============Style css=========*/
 
 /*-------------------------------------
@@ -279,7 +293,7 @@ nav.navbar.bootsnav .navbar-toggle i{
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
+.about {padding: 0 0 100px;}
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -364,7 +378,6 @@ nav.navbar.bootsnav .navbar-toggle i{
 
 .education {
     background:  #f9fbfd;
-    padding-top:  50px;
 }
 .education-horizontal-timeline {
     padding: 80px 0;
@@ -403,16 +416,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 /*-------------------------------------
         6.  Skills
 --------------------------------------*/
+.skill-content{padding: 0 0 80px;}
+.single-skill-content{padding-top: 50px;}
 
-.skill-content{padding: 50px 0 80px;}
-.single-skill-content{padding-top: 100px;}
-.section-heading h2 {
-    font-size: 24px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
-}
 .single-progress-txt {
     display: flex;
 }
@@ -470,10 +476,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 /*-------------------------------------
         7. Experience
 -------------------------------------*/
-.experience {
-    padding: 50px 0 100px;
-    border-top: 1px solid #e5ebf2;
-}
 .experience-content {padding-top: 100px;}
 .single-timeline-box {margin-bottom: 75px;}
 
@@ -572,7 +574,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 --------------------------------------*/
 .profiles {
     padding:  50px 0 100px;
-    border:  1px solid #e5ebf2;
+    border:  1px solid #999fb3;
 }
 
 .profiles-content {padding-top: 100px;}
@@ -588,7 +590,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #b2c1ce;
+    border-right: 1px solid #999fb3;
     overflow:hidden;
     -webkit-transition:background 0.5s linear; 
     -moz-transition:background 0.5s linear; 
@@ -603,7 +605,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 }
 .single-profile.profile-no-border{border-right:transparent;}
 .profile-border {
-    border-bottom: 1px solid #b2c1ce;
+    border-bottom: 1px solid #999fb3;
 }
 .single-profile-overlay{
     display:flex;
@@ -645,12 +647,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 /*-------------------------------------
         9. Portfolio
 --------------------------------------*/
-.portfolio {
-    padding:  50px 0 100px;
-    border:  1px solid #e5ebf2;
+.portfolio .container {
+    margin-bottom: 75px;
+    margin-top: 25px;
 }
-
-.portfolio-content {padding-top: 100px;}
 
 /* ---- .item ---- */
 .isotope:after {
@@ -741,17 +741,22 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 }/*.isotope-overlay*/
 
 /*-------------------------------------
-        10. Clients
+        11. Acknowledgments
 --------------------------------------*/
-.acknowledgments {padding-top: 50px;}
+.acknowledgments h2 {
+    margin-top: 25px;
+    border-top: none;
+    border-bottom: 1px solid #e5ebf2;
+    font-size: 20px;
+}
+
 .acknowledgments-area {
     display: flex;
     align-items: center;
     height: 100px;
 }
-.ca1 {margin-top: 25px;}
-.ca-unique {margin-top: 50px; margin-bottom: 50px;}
-.ca-final {margin-bottom: 25px;}
+/* .ca1 {margin-top: 25px;}
+.ca-final {margin-bottom: 25px;} */
 
 .acknowledgments-area .item {padding: 0 25px; margin-bottom: 0;}
 .acknowledgments-content .isotope {
@@ -768,13 +773,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 }
 
 /*-------------------------------------
-        11. Contact
+        10. Contact
 --------------------------------------*/
-/* .contact {
+.contact {
     background: #f9fbfd;
-    padding: 50px 0 100px;
 }
-.single-contact-box {padding-top: 100px;}
+/* .single-contact-box {padding-top: 100px;}
 .contact-form  .form-group {
     margin-bottom: 20px;
     
@@ -789,7 +793,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
     background: #fff;
     color: #636a82;
     resize: none;
-} */
+}  */
 
 /*-- ---- contct button--*/
 /* .contact-form .single-contact-btn {
@@ -919,6 +923,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 25%;}
 .hm-foot-icon ul li>a:hover{
     color: #9f00ff;
 }/*hm-foot-icon*/
+
+.footer-copyright {
+    border-top: 1px solid #888ea5;
+}
 
 .hm-footer-copyright p{
     color: #888ea5;
