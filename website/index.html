@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+
 		<!-- -------------------------------------------------- -->
 		<!-- PRELOADS -->
 
@@ -19,6 +20,14 @@
 		<link rel="preload" href="assets/css/animate.css" as="style">
 		<link rel="preload" href="assets/css/style.css" as="style">
 		<link rel="preload" href="assets/css/responsive.css" as="style">
+
+		<!-- -------------------------------------------------- -->
+		<!-- LOADING SCREEN -->
+		<link rel="preload" href="assets/css/loading.css" as="style">
+		<link rel="preload" href="assets/css/loading.html" as="style">
+		<link rel="preload" href="assets/js/loading.js" as="style">
+
+		<link rel="stylesheet" href="css/loading.css">
 
 		<!-- -------------------------------------------------- -->
 
@@ -67,7 +76,8 @@
     </head>
 	
 	<body>
-		
+		<div id="content" class="hidden-content">
+
 		<header class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
@@ -569,7 +579,7 @@
 										<h5>Rio de Janeiro, Brasil</h5>
 										<p class="description">
 											A high-level school where I had the opportunity 
-											to study and participate in olympiads.
+											to study and participate in olympics.
 											<br>- Bronze Medalist
 											<br>- Other extracurricular activities, such as arts, 
 												theater, sports, production, music, events, etc.
@@ -836,6 +846,7 @@
 			
         </footer>
 		
+		</div>
 
 		<!-- ------------------------------------------------------------------------------ -->
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
@@ -844,23 +855,23 @@
         
         <!--modernizr.min.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>		
+
         <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
 		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
 		<script src="assets/js/jquery.sticky.js"></script>
-
-
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
-        
+
+		<!-- Loading Scripts -->
+		<script src="assets/js/loading.js"></script>
+		<script> // Carrega dinamicamente o HTML da tela de loading
+			fetch('./loading.html')
+			  .then(response => response.text())
+			  .then(data => {
+				document.body.insertAdjacentHTML('afterbegin', data);
+			  });
+		</script>
+
     </body>
 	
 </html>
