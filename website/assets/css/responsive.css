@@ -59,7 +59,7 @@
 	.single-profile {max-width: 350px; margin: 30px auto;border: 0;}
 	.profile-border{border: 0;}
 
-	.contact .container {width: 500px;}
+	.contact .container {width: auto; max-width: 350px; margin: 0 auto;}
 	.contact-content {flex-direction: row;}
 
 	.single-horizontal-timeline {max-width: 350px;margin: 30px auto;}
@@ -94,8 +94,7 @@
 
 @media screen and (max-width: 480px){
 	.contact-content {
-		flex-wrap: wrap;margin-left: 0px; margin-right: 50px;
-		margin-bottom: 100px;
+		flex-wrap: wrap;margin-left: 0px;margin-bottom: 100px;
 	}
 	.contact-content .single-contact-box {
 		margin: 10px 25px;
