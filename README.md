@@ -1,4 +1,4 @@
-# Repositório de Projetos - Estágio Compass UOL (Scholarship Program)
+# Repositório de Projetos<br>Compass UOL (Scholarship Program)
 Este repositório contém os projetos desenvolvidos durante o **programa de estágio da Compass UOL**, como parte do **Scholarship Program**. Os projetos documentados aqui são parte da minha jornada de aprendizado e desenvolvimento profissional na área de tecnologia.
 
 ## Projetos
