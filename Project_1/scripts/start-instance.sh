@@ -6,9 +6,10 @@ sudo yum install curl -y
 sudo yum install nginx -y
 sudo yum install cronie -y
 
-sudo git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
+git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
+git config --global --add safe.directory /home/ec2-user/PB-CompassUOL-GabrielGomesDev
 cd /home/ec2-user/PB-CompassUOL-GabrielGomesDev
-sudo git pull origin main
+git pull origin main
 
 sudo cp -R /home/ec2-user/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
 

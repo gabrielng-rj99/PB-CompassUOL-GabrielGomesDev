@@ -4,6 +4,7 @@ yum update -y
 
 yum install git -y
 git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev /home/ec2-user/PB-CompassUOL-GabrielGomesDev
+git config --global --add safe.directory /home/ec2-user/PB-CompassUOL-GabrielGomesDev
 
 yum install curl -y
 yum install nginx -y
