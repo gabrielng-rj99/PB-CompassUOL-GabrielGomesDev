@@ -1,21 +1,23 @@
-sudo cd ~
-sudo yum update -y && sudo yum install git curl nginx cronie -y
+sudo cd /home/ec2-user
+sudo yum update -y
 
-git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
-cd PB-CompassUOL-GabrielGomesDev
-git pull origin main
+sudo yum install git -y
+sudo yum install curl -y
+sudo yum install nginx -y
+sudo yum install cronie -y
 
-sudo cp -R ~/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
+sudo git clone https://github.com/gabrielng-rj99/PB-CompassUOL-GabrielGomesDev
+cd /home/ec2-user/PB-CompassUOL-GabrielGomesDev
+sudo git pull origin main
 
-
-sudo systemctl restart crond
+sudo cp -R /home/ec2-user/PB-CompassUOL-GabrielGomesDev/website/* /usr/share/nginx/html
 
 sudo systemctl stop nginx
-sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh
+sudo bash /home/ec2-user/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh
 sudo systemctl start nginx
 
-VERIFY_NGINX="*/5 * * * * sudo bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
-START_INSTANCE="@reboot bash ~/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start-instance.sh"
+VERIFY_NGINX="*/5 * * * * sudo bash /home/ec2-user/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/verify-nginx.sh"
+START_INSTANCE="@reboot bash /home/ec2-user/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start-instance.sh"
 
 
 if ! crontab -l 2>/dev/null | grep -qF "$VERIFY_NGINX"; then
