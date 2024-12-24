@@ -46,6 +46,10 @@
 
 	.col-md-4 {margin-left: 50px; margin-right: 50px;}
 
+	.acknowledgments-content {flex-direction: column;}
+	.acknowledgments-area {height: 480px;}
+	.single-acknowledgments-box {margin: 15px 25px}
+
 	.single-horizontal-timeline .experience-time,.single-horizontal-timeline .timeline-content {margin: 0;}
 }/*max-width:991px*/
 
