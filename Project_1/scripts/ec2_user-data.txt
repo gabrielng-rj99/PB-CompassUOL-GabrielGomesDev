@@ -19,12 +19,12 @@ VERIFY_NGINX="*/5 * * * * sudo bash /home/ec2-user/PB-CompassUOL-GabrielGomesDev
 START_INSTANCE="@reboot bash /home/ec2-user/PB-CompassUOL-GabrielGomesDev/Project_1/scripts/start-instance.sh"
 
 
-if ! crontab -l 2>/dev/null | grep -qF "$VERIFY_NGINX"; then
-    (crontab -l 2>/dev/null; echo "$VERIFY_NGINX") | crontab -
+if ! crontab -u ec2-user -l 2>/dev/null | grep -qF "$VERIFY_NGINX"; then
+    (crontab -u ec2-user -l 2>/dev/null; echo "$VERIFY_NGINX") | crontab -u ec2-user -
 fi
 
-if ! crontab -l 2>/dev/null | grep -qF "$START_INSTANCE"; then
-    (crontab -l 2>/dev/null; echo "$START_INSTANCE") | crontab -
+if ! crontab -u ec2-user -l 2>/dev/null | grep -qF "$START_INSTANCE"; then
+    (crontab -u ec2-user -l 2>/dev/null; echo "$START_INSTANCE") | crontab -u ec2-user -
 fi
 
 init 6
