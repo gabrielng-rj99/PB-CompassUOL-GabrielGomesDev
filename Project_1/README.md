@@ -35,7 +35,7 @@ Este projeto tem como objetivo criar um ambiente Linux no Windows utilizando o W
 
 # Extras
 
-- Criação de uma automação ao iniciar instância EC2. (start-instance.sh)
+- Criação de uma ***[automação](./doc/automation.md)*** ao iniciar instância EC2. (start-instance.sh)
     <br>Sempre q ela iniciar, irá verificar mudanças no github e atualizar o projeto automaticamente.
 - Exposição do Diretório do Projeto
 - Imagens Funcionando

@@ -27,6 +27,7 @@ Para tornar a sub-rede da sua instância EC2 pública através do console da AWS
 2. Verifique se a instância tem um IP público. Caso não tenha, você precisará associar um Elastic IP:
    - No painel à esquerda do **EC2**, vá até **Elastic IPs**.
    - Clique em **Allocate Elastic IP address** e em seguida associe o endereço à sua instância.
+3. Fora isso, pode-se iniciar uma instância do 0 com auto-assign public IP
 
 ## Passo 4: Verificar as Configurações de Segurança
 

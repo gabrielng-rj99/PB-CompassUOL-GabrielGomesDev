@@ -54,7 +54,9 @@ Caso não saiba que é **nuvem (cloud),** ***saiba mais com esse artigo*** **:**
 
 
 <br>
-       
+
+### [Extra. Automatizar todo o resto](./automation.md)
+
 ### III. Instalar o Nginx
 1. Após conectar-se à instância EC2, execute os seguintes comandos para instalar o Nginx:
 
@@ -134,7 +136,12 @@ o valor do “inet” como meu caso “`172.23.7.63`” é o valor do `WSL.IP.WS
 
 </details>
 
-# <!-- 2. Criar um script de validação do Nginx -->
+
+<br>
+
+# [Extra. Automatizar as próximas tarefas 2 e 3](./automation.md)
+
+<!-- 2. Criar um script de validação do Nginx -->
 
 <details> <summary style="font-size:1.5em; font-weight:bold">2. Criar um script de validação do Nginx</summary>
 
