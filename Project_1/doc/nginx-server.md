@@ -1,7 +1,15 @@
-<h1 style="border-bottom:none">Configuração de Servidor Nginx</h1>
+# Configuração de Servidor Nginx
 
-# <!-- 1. Subir um servidor Nginx online (com aws) -->
-<details> <summary style="font-size:1.5em; font-weight:bold"> 1. Subir um servidor Nginx online (com aws)</summary>
+## Índice
+1. [Subir um servidor Nginx online (com aws)](#1-subir-um-servidor-nginx-online-com-aws)
+2. [Criar um script de validação do Nginx](#2-criar-um-script-de-validação-do-nginx)
+3. [Automatizar a execução do script](#3-automatizar-a-execução-do-script)
+4. [Versionamento da Atividade](#4-versionamento-da-atividade)
+5. [Extra. Automatizar as próximas tarefas 2 e 3](./automation.md)
+
+<br> <br>
+
+# 1. Subir um servidor Nginx online (com aws)
 
 ### **O que é o Nginx?**
 
@@ -134,16 +142,9 @@ o valor do “inet” como meu caso “`172.23.7.63`” é o valor do `WSL.IP.WS
 
 <br>
 
-</details>
 
 
-<br>
-
-# [Extra. Automatizar as próximas tarefas 2 e 3](./automation.md)
-
-<!-- 2. Criar um script de validação do Nginx -->
-
-<details> <summary style="font-size:1.5em; font-weight:bold">2. Criar um script de validação do Nginx</summary>
+# 2. Criar um script de validação do Nginx
 
 Neste passo, criaremos um script em Shell Script que será responsável por verificar se o serviço do Nginx está online e gerar logs de acordo com o status do serviço e com ***mensagem personalizada***. O objetivo é automatizar a validação e gerar arquivos de saída com o status atual do servidor, conforme solicitado.
 
@@ -247,11 +248,10 @@ Salve o seguinte conteúdo em um arquivo chamado `verifica_nginx.sh`:
 
 <br>
 
-</details>
 
 
-# <!-- 3. Automatizar a execução do script -->
-<details> <summary style="font-size:1.5em; font-weight:bold">3. Automatizar a execução do script</summary>
+
+# 3. Automatizar a execução do script
 
 Na tarefa de automatizar a execução de um script de validação do Nginx, duas opções comuns são o uso do **cron** e a implementação de um **event loop** no próprio script. A seguir, estão documentadas as principais diferenças entre essas abordagens e a justificativa para a escolha do cron como solução mais eficiente.
 
@@ -342,11 +342,9 @@ Cada Editor tem sua forma de salvar e sair, sendo os mais famosos vim e nano:
 
 <br>
 
-</details>
+---
 
-# <!-- 4. Versionamento da Atividade -->
-
-<details> <summary style="font-size:1.5em; font-weight:bold">4. Versionamento da Atividade</summary>
+# 4. Versionamento da Atividade
 
 O **Git** é uma ferramenta essencial para controle de versões, criada por Linus Torvalds para gerenciar o desenvolvimento de grandes projetos, como o kernel do **GNU/Linux**. A seguir, veremos como iniciar um repositório Git local no WSL, realizar o versionamento de código, verificar o histórico e subir o repositório para o GitHub, incluindo o uso de `.gitignore` e licenças.
 <br>
@@ -618,5 +616,7 @@ A mensagem de commit deve seguir o formato:
 
 ---
 
-</details>
 
+
+
+# [Extra. Automatizar as próximas tarefas 2 e 3](./automation.md)
