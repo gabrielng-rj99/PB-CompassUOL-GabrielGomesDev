@@ -22,7 +22,8 @@ Com o andamento do estágio e o progresso na aplicação pessoal, novos projetos
 
 ## Issues
 
-- [ ] Finalizar os textos e descrições na aplicação web pessoal.
-- [ ] Adicionar as imagens e logos nos projetos exibidos pela aplicação.
+- ~~☒ Finalizar os textos e descrições na aplicação web pessoal.~~ <br>
+- ~~☒ Adicionar as imagens e logos nos projetos exibidos pela aplicação.~~
+- ☐ Ajustar links quebrados.
 
 - Em espera dos próximos projetos da Compass UOL.
