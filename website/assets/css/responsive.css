@@ -112,8 +112,8 @@
 @media screen and (max-width:361px){
 }/*max-width:350px*/
 
-@media screen and  (max-width: 320px){
-	
+@media screen and  (max-width: 329px){
+	.contact .container {height: 550px;}
 }/*max-width:320px*/
 
 /* -------------------------------------------------- */
