@@ -16,7 +16,8 @@ Website: 	https://www.themesine.com/
 ```
 Version 1.0 14-05-2018
 - initial release
-
+```
+```
 Version 2.0 23-14-2024
 - Modified
 ```
