@@ -7,7 +7,7 @@
 4. [Versionamento da Atividade](#4-versionamento-da-atividade)
 5. [Extra. Automatizar as próximas tarefas 2 e 3](./automation.md)
 
-<br> <br>
+<br>
 
 # 1. Subir um servidor Nginx online (com aws)
 
@@ -38,12 +38,15 @@ Caso não saiba que é **nuvem (cloud),** ***saiba mais com esse artigo*** **:**
 <br>
 
 ### II. Criar e Configurar uma Instância EC2 ( Amazon Linux )
-1. **Acesse o console da AWS** e navegue até o serviço **EC2** (**caso saiba, pode realizar por terminal**).
-2. **Dentro de Key Pairs,** crie uma nova **chave** do tipo **RSA**, formato **.pem**:
+1. Acesse o console da **AWS** e navegue até o serviço **EC2** (*caso saiba, pode realizar por terminal*).
+2. Dentro de **Key Pairs,** crie uma nova **chave** do tipo **RSA**, formato **.pem**:
     - **A chave será baixada automaticamente no seu computador.**
-3. **Lance uma nova instância** **t2.micro (free tier)** usando a imagem **Amazon Linux (free tier)**.
-4. **Configurar o Acesso à Internet da Instância EC2**:
-    - **Detalhes em:** ***[Configuração de IP (e Elastic IP) para instâncias EC2](./subdocs/config-eip-aws-console.md)***
+3. *Lance uma nova instância* **t2.micro** (*free tier*) usando a imagem **Amazon Linux** (*free tier*).
+4. Configurar o Acesso à Internet da Instância EC2:
+    - **Detalhes de configuração de ip em:** ***[Configuração de IP (e Elastic IP) para instâncias EC2](./subdocs/config-eip-aws-console.md)***
+    - Dentro de **Network Settings** clique em **edit** (superior direito).
+    - Selecione a VPC, Subnet e Security Group criados anteriormente.
+    - A Parte do "desnecessário" dentro do link acima é porque você pode escolher **Auto-assign public IP**, caso contrário, precisirá de um elastic-ip.
 
 5. **Conecte-se à instância** usando SSH. No terminal local (ou WSL em caso de Windows), execute o seguinte comando (substitua `keyfile.pem` pelo caminho da sua chave PEM e `ec2-user@public-ip` pelo IP público da instância):
     
