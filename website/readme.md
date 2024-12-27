@@ -35,4 +35,4 @@ Version 2.0 23-14-2024
 - Unsplash https://unsplash.com/
 
 ### License:
->This template is under Free License - https://www.themesine.com/license/
+> This template is under Free License - https://www.themesine.com/license/
