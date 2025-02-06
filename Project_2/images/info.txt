@@ -1,0 +1,3 @@
+# Imagens Utilizadas na Documentação
+
+Esta pasta contém todas as imagens utilizadas na documentação do projeto. Elas são necessárias para ilustrar e complementar o conteúdo descrito nos documentos, oferecendo uma visualização mais clara e precisa dos conceitos abordados.
