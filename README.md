@@ -8,6 +8,9 @@ Até o momento, o repositório contém os seguintes projetos:
 - **[Projeto 1 - Instalação WSL e Subir um Servidor Nginx Online](./Project_1/)**  
    *Descrição:* Este projeto envolve a criação de um ambiente Linux no Windows utilizando WSL, a instalação de um servidor Nginx, e o desenvolvimento de um script automatizado para monitorar o status do servidor.
 
+- **[Projeto 2 - Deploy de WordPress na AWS com Docker](./Project_2/)**  
+   *Descrição:* O projeto visa implantar uma aplicação WordPress na AWS, utilizando Docker para conteinerização. A infraestrutura será escalável e altamente disponível, com MySQL no RDS, EFS para arquivos estáticos e Load Balancer. Tudo será orquestrado em uma VPC com subnets públicas e privadas.
+
 <br>
 
 ### Aplicação Web Pessoal
@@ -22,8 +25,5 @@ Com o andamento do estágio e o progresso na aplicação pessoal, novos projetos
 
 ## Issues
 
-- ~~☒ Finalizar os textos e descrições na aplicação web pessoal.~~ <br>
-- ~~☒ Adicionar as imagens e logos nos projetos exibidos pela aplicação.~~
 - ☐ Ajustar links quebrados.
-
 - Em espera dos próximos projetos da Compass UOL.
