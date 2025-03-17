@@ -11,6 +11,9 @@ Até o momento, o repositório contém os seguintes projetos:
 - **[Projeto 2 - Deploy de WordPress na AWS com Docker](./Project_2/)**  
    *Descrição:* O projeto visa implantar uma aplicação WordPress na AWS, utilizando Docker para conteinerização. A infraestrutura será escalável e altamente disponível, com MySQL no RDS, EFS para arquivos estáticos e Load Balancer. Tudo será orquestrado em uma VPC com subnets públicas e privadas.
 
+- **[Projeto 3 - Migração e Modernização Para a AWS](./Project_3/)**  
+   *Descrição:* O objetivo desse projeto é vender uma solução com custos para a realização uma migração de On Premise para a nuvem AWS. A transição será realizada em duas etapas: uma inicial de Lift-and-Shift e, em seguida, a modernização com Kubernetes (EKS). A estrutura deve ser escalável, disponível e segura.
+
 <br>
 
 ### Aplicação Web Pessoal
